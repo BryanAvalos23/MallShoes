@@ -10,13 +10,19 @@
 <body class="bg-zinc-50">
 	<header class="w-full sm:w-full flex justify-between p-6">
 		<p><span class="text-orange-500 text-3xl">MallShoes</span></p>
-		<ion-icon name="menu" class="w-8 h-8 sm:block md:hidden lg:hidden xl:hidden hover:cursor-pointer"></ion-icon>
-		<nav id="navbar" class="sm:hidden md:block lg:block xl:block">
-			<ul class="flex justify-between gap-12 text-lg text-gray-600">
-				<li><a href="#">Dama</a></li>
-				<li><a href="#">Caballero</a></li>
-				<li><a href="#">Nosotros</a></li>
-				<li><a href="#"><ion-icon name="cart-outline" class="w-7 h-7"></ion-icon></a></li>
+		<ion-icon id="menu" name="menu"
+			class="w-8 h-8 sm:block md:hidden lg:hidden xl:hidden hover:cursor-pointer"></ion-icon>
+		<nav id="navbar"
+			class="sm:hidden md:block lg:block xl:block sm:absolute sm:right-0 sm:mt-[-1.5rem] md:mt-0 lg:mt-0 xl:mt-0 sm:bg-zinc-50 sm:h-screen sm:w-60 md:w-auto md:bg-inherit lg:bg-inherit xl:bg-inherit lg:w-auto xl:w-auto">
+			<ul
+				class="flex justify-between gap-12 text-lg text-gray-600 sm:block md:flex lg:flex xl:flex md:justify-between lg:justify-between xl:justify-between">
+				<ion-icon id="menu" name="menu"
+					class="w-8 h-8 sm:block md:hidden lg:hidden xl:hidden hover:cursor-pointer"></ion-icon>
+				<li class="sm:p-4 md:p-0 lg:p-0 xl:p-0"><a href="#" class="hover:text-orange-400">Dama</a></li>
+				<li class="sm:p-4 md:p-0 lg:p-0 xl:p-0"><a href="#" class="hover:text-orange-400">Caballero</a></li>
+				<li class="sm:p-4 md:p-0 lg:p-0 xl:p-0"><a href="#" class="hover:text-orange-400">Nosotros</a></li>
+				<li class="sm:p-4 md:p-0 lg:p-0 xl:p-0"><a href="#" class="hover:text-orange-400"><ion-icon
+							name="cart-outline" class="w-7 h-7"></ion-icon></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -40,7 +46,8 @@
 						y juveniles. Encontrarás el equilibrio perfecto entre comodidad y estilo, diseñado
 						para tus momentos más relajados y llenos de energía.
 					</p>
-					<p class="mr-4 text-end text-xl text-orange-500 hover:cursor-pointer hover:text-orange-700">
+					<p
+						class="mr-4 text-end text-xl text-orange-500 hover:cursor-pointer hover:text-orange-700 font-semibold">
 						Explorar...
 					</p>
 				</div>
@@ -57,7 +64,8 @@
 						pisas. "La Elegancia está en Ti" es más que un lema; es una invitación a explorar nuestra
 						exquisita colección de zapatos formales para mujer.
 					</p>
-					<p class="text-start text-xl text-orange-500 hover:cursor-pointer hover:text-orange-700">
+					<p
+						class="text-start text-xl text-orange-500 hover:cursor-pointer hover:text-orange-700 font-semibold">
 						Explorar...
 					</p>
 				</div>
@@ -73,31 +81,32 @@
 	<footer class="w-full mt-4 flex justify-around text-gray-600 sm:grid sm:grid-cols-1 md:flex lg:flex xl:flex">
 		<div>
 			<ul>
-				<li class="m-8"><a href="#">Servicio domicilio</a></li>
-				<li class="m-8"><a href="#">Condiciones de compra</a></li>
-				<li class="m-8"><a href="#">Preguntas frecuentes</a></li>
-				<li class="m-8"><a href="#">Politica de devolucion</a></li>
+				<li class="m-8"><a href="#" class="hover:text-gray-700">Servicio domicilio</a></li>
+				<li class="m-8"><a href="#" class="hover:text-gray-700">Condiciones de compra</a></li>
+				<li class="m-8"><a href="#" class="hover:text-gray-700">Preguntas frecuentes</a></li>
+				<li class="m-8"><a href="#" class="hover:text-gray-700">Politica de devolucion</a></li>
 			</ul>
 		</div>
 		<div>
 			<ul>
-				<li class="m-8"><a href="#">Politicas y privacidad</a></li>
-				<li class="m-8"><a href="#">Promociones</a></li>
-				<li class="m-8"><a href="#">Tel:2222-2222</a></li>
-				<li class="m-8"><a href="#">Correo: mallshoes@mail.com</a></li>
+				<li class="m-8"><a href="#" class="hover:text-gray-700">Politicas y privacidad</a></li>
+				<li class="m-8"><a href="#" class="hover:text-gray-700">Promociones</a></li>
+				<li class="m-8">Tel:2222-2222</li>
+				<li class="m-8">Correo: mallshoes@mail.com</li>
 			</ul>
 		</div>
 		<div>
 			<ul>
-				<li class="m-8"><a href="#">Centro comercial Galerias Escalon, segundo nivel local 36 </a></li>
-				<li class="m-8"><a href="#">Centro comercial Bamboo San Benito, segundo nivel local 36 </a></li>
-				<li class="m-8"><a href="#">Centro comercial La gran via, segundo nivel local 36 </a></li>
+				<li class="m-8">Centro comercial Galerias Escalon, segundo nivel local 36 </li>
+				<li class="m-8">Centro comercial Bamboo San Benito, segundo nivel local 36 </li>
+				<li class="m-8">Centro comercial La gran via, segundo nivel local 36 </li>
 			</ul>
 		</div>
 	</footer>
 
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script src="js/app.js"></script>
 </body>
 
 </html>
