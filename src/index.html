@@ -8,9 +8,10 @@
 </head>
 
 <body class="bg-zinc-50">
-	<header class="w-full flex justify-between p-6">
+	<header class="w-full sm:w-full flex justify-between p-6">
 		<p><span class="text-orange-500 text-3xl">MallShoes</span></p>
-		<nav>
+		<ion-icon name="menu" class="w-8 h-8 sm:block md:hidden lg:hidden xl:hidden hover:cursor-pointer"></ion-icon>
+		<nav id="navbar" class="sm:hidden md:block lg:block xl:block">
 			<ul class="flex justify-between gap-12 text-lg text-gray-600">
 				<li><a href="#">Dama</a></li>
 				<li><a href="#">Caballero</a></li>
@@ -20,18 +21,22 @@
 		</nav>
 	</header>
 	<hr>
-	<main class="w-full px-28">
-		<h1 class="text-5xl text-orange-500 text-center m-12">Tu estilo en un solo sitio</h1>
-		<article id="juvenil" class="grid grid-cols-6 gap-8">
-			<div class="col-start-1 col-end-3">
-				<img src="img/chica-tennis.jpg" class="rounded-lg" alt="juvenil tenis chicas mujeres shoes">
+	<main class="w-full px-28 sm:px-12 md:px-8 lg:px-20 xl:px-28">
+		<h1 class="text-5xl font-semibold text-orange-500 text-center m-12 xl:pb-8">Tu estilo en un solo
+			sitio
+		</h1>
+		<article id="juvenil"
+			class="grid grid-cols-6 gap-8 sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6">
+			<div class="col-start-1 col-end-3 sm:col-start-1 sm:col-end-3 md:col-start-1 md:col-end-3">
+				<img src=" img/chica-tennis.jpg" class="rounded-lg sm:w-full sm:h-full sm:object-cover"
+					alt="juvenil tenis chicas mujeres shoes">
 			</div>
-			<section class="col-start-3 col-end-7">
-				<div class="px-12">
-					<h3 class="text-3xl mb-4">Un estilo para divertirte</h3>
-					<p class="text-xl mb-12">Sumérgete en la frescura del verano con nuestra exclusiva colección de
-						zapatos
-						casuales
+			<section
+				class="col-start-3 col-end-7 sm:col-start-1 sm:col-end-1 md:col-start-3 md:col-end-7 lg:col-start-3 lg:col-end-7 xl:col-start-3 xl:col-end-7">
+				<div class="px-12 sm:px-2">
+					<h3 class="text-3xl mb-4 sm:text-orange-500 font-semibold">Un estilo para divertirte</h3>
+					<p class="text-xl mb-12 sm:mb-4 sm:text-lg">Sumérgete en la frescura del verano con nuestra
+						exclusiva colección de zapatos casuales
 						y juveniles. Encontrarás el equilibrio perfecto entre comodidad y estilo, diseñado
 						para tus momentos más relajados y llenos de energía.
 					</p>
@@ -41,28 +46,31 @@
 				</div>
 			</section>
 		</article>
-		<article id="elegante" class="grid grid-cols-6 gap-8 mt-20">
-			<section class="col-start-1 col-end-5">
+		<article id="elegante"
+			class="grid grid-cols-6 sm:grid-cols-1 gap-8 mt-20 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 sm:grid-rows-2 md:grid-rows-1 lg:grid-rows-1 xl:grid-rows-1">
+			<section
+				class="col-start-1 col-end-5 md:row-start-1 md:row-end-2 lg:row-start-1 lg:row-end-2 xl:row-start-1 xl:row-end-2">
 				<div>
-					<h3 class="text-3xl mb-4">Un estilo para divertirte</h3>
-					<p class="text-xl mb-12">Sumérgete en la frescura del verano con nuestra exclusiva colección de
-						zapatos
-						casuales
-						y juveniles. Encontrarás el equilibrio perfecto entre comodidad y estilo, diseñado
-						para tus momentos más relajados y llenos de energía.
+					<h3 class="text-3xl mb-4 sm:text-orange-500 font-semibold">La elegancia esta en ti</h3>
+					<p class="text-xl mb-12 sm:mb-4 sm:text-lg">
+						En nuestra tienda en línea, creemos que la verdadera elegancia comienza desde el suelo que
+						pisas. "La Elegancia está en Ti" es más que un lema; es una invitación a explorar nuestra
+						exquisita colección de zapatos formales para mujer.
 					</p>
 					<p class="text-start text-xl text-orange-500 hover:cursor-pointer hover:text-orange-700">
 						Explorar...
 					</p>
 				</div>
 			</section>
-			<div class="col-start-5 col-end-7">
-				<img src="img/chica-elegancia.jpg" class="rounded-lg" alt="juvenil tenis chicas mujeres shoes">
+			<div
+				class="col-start-5 col-end-7 sm:col-start-1 sm:col-end-5 sm:row-start-1 sm:row-end-2 md:col-start-5 md:col-end-7 lg:col-start-5 lg:col-end-7 xl:col-start-5 xl:col-end-7">
+				<img src="img/chica-elegancia.jpg" class="rounded-lg sm:w-full sm:h-full sm:object-cover"
+					alt="juvenil tenis chicas mujeres shoes">
 			</div>
 		</article>
 	</main>
 	<hr class="mt-8">
-	<footer class="w-full mt-4 flex justify-around text-gray-600">
+	<footer class="w-full mt-4 flex justify-around text-gray-600 sm:grid sm:grid-cols-1 md:flex lg:flex xl:flex">
 		<div>
 			<ul>
 				<li class="m-8"><a href="#">Servicio domicilio</a></li>
