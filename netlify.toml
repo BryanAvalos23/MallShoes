@@ -1,3 +1,2 @@
-command = "npm install -D tailwindcss"
-command = "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+command = "npx tailwindcss -i ./src/css/input.css -o public/output.css --watch"
 publish = "public"
