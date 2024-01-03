@@ -4,6 +4,6 @@
 		"tailwindcss-cli": "^0.1.2"
 	},
 	"scripts": {
-		"build": "npx tailwindcss-cli build src/css/input.css -o src/css/output.css -i tailwind.config.js"
+		"build": "npx tailwindcss -i src/css/input.css -o src/css/output.css"
 	}
 }
