@@ -1,2 +1,6 @@
+[build]
+base = "/"
+publish = "/src"
 command = "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
 publish = "public"
+environment = { NODE_VERSION = "18.16.1" }
