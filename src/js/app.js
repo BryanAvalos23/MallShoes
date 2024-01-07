@@ -1,9 +1,17 @@
-document.addEventListener('DOMContentLoaded', function () {
-	const menu = document.querySelector('#menu')
-	const navbar = document.querySelector('#navbar')
+const navbar = document.querySelector('#navbar')
+const menu = document.querySelector('#menu')
+const closedMenu = document.querySelector('#closed')
 
-	menu.addEventListener('click', () => {
-		navbar.classList.toggle('hidden')
-	})
-})
+eventListener()
+function eventListener() {
+	menu.addEventListener('click', openMenu)
+	closedMenu.addEventListener('click', closeMenu)
+}
 
+function openMenu() {
+	navbar.classList.toggle('hidden')
+}
+
+function closeMenu() {
+	navbar.classList.toggle('hidden')
+}
