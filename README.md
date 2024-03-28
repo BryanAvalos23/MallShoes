@@ -9,6 +9,7 @@ y un backend donde se usa nodejs con express y javascript, junto a una base de d
 ## Ejecutar
 
 Para levantar el proyecto realiza los siguientes pasos:
+
 1- clonar el repositorio
   ```bash
   https://github.com/BryanAvalos23/MallShoes.git
